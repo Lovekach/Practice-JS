@@ -17,26 +17,42 @@
 
 // CW part2 6 task
 
-function nbDig(n, d) {
-    let count = 0;
+// function nbDig(n, d) {
+//     let count = 0;
 
-    for (let k = 0; k <= n; k++) {
+//     for (let k = 0; k <= n; k++) {
 
-        const square = k * k;
-
-
-        const squareStr = square.toString();
+//         const square = k * k;
 
 
-        for (let i = 0; i < squareStr.length; i++) {
+//         const squareStr = square.toString();
 
-            const digit = parseInt(squareStr[i]);
 
-            if (digit === d) {
-                count++;
-            }
-        }
+//         for (let i = 0; i < squareStr.length; i++) {
+
+//             const digit = parseInt(squareStr[i]);
+
+//             if (digit === d) {
+//                 count++;
+//             }
+//         }
+//     }
+
+//     return count;
+// }
+
+
+// CW part2 8 task
+
+
+function getDecimal(number) {
+    if (typeof number !== 'number') {
+      throw new Error('Invalid input. Please provide a valid number.');
     }
-
-    return count;
-}
+  
+    const absoluteNumber = Math.abs(number);
+  
+    const decimalPart = absoluteNumber % 1;
+  
+    return decimalPart;
+  }
