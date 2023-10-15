@@ -44,28 +44,28 @@
 
 // CW part2 7 task
 
-function findMissing(arr1, arr2) {
-    const countMap = new Map();
+// function findMissing(arr1, arr2) {
+//     const countMap = new Map();
 
 
-    for (const num of arr1) {
-        countMap.set(num, (countMap.get(num) || 0) + 1);
-    }
+//     for (const num of arr1) {
+//         countMap.set(num, (countMap.get(num) || 0) + 1);
+//     }
 
 
-    for (const num of arr2) {
-        const count = countMap.get(num);
-        if (count === 1) {
-            countMap.delete(num);
-        } else {
-            countMap.set(num, count - 1);
-        }
-    }
+//     for (const num of arr2) {
+//         const count = countMap.get(num);
+//         if (count === 1) {
+//             countMap.delete(num);
+//         } else {
+//             countMap.set(num, count - 1);
+//         }
+//     }
 
-    for (const [key, value] of countMap) {
-        return key;
-    }
-}
+//     for (const [key, value] of countMap) {
+//         return key;
+//     }
+// }
 
 
 
@@ -84,3 +84,15 @@ function findMissing(arr1, arr2) {
 
 //     return decimalPart;
 // }
+
+
+// CW part2 9 task
+
+function maxTriSum(numbers){
+    const uniqueArr = Array.from(new Set(arr));
+    uniqueArr.sort((a, b) => b - a);
+    const maxSum = uniqueArr.slice(0, 3).reduce((sum, num) => sum + num, 0);
+  
+    return maxSum;
+  }
+  
