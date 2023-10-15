@@ -88,11 +88,12 @@
 
 // CW part2 9 task
 
-function maxTriSum(numbers){
-    const uniqueArr = Array.from(new Set(arr));
+function maxTriSum(numbers) {
+    const uniqueArr = Array.from(new Set(numbers));
+    if (uniqueArr.length < 3) {
+        return "Массив должен содержать хотя бы 3 уникальных числа";
+    }
     uniqueArr.sort((a, b) => b - a);
     const maxSum = uniqueArr.slice(0, 3).reduce((sum, num) => sum + num, 0);
-  
     return maxSum;
-  }
-  
+}
