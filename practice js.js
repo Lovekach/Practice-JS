@@ -88,12 +88,30 @@
 
 // CW part2 9 task
 
-function maxTriSum(numbers) {
-    const uniqueArr = Array.from(new Set(numbers));
-    if (uniqueArr.length < 3) {
-        return "Массив должен содержать хотя бы 3 уникальных числа";
-    }
-    uniqueArr.sort((a, b) => b - a);
-    const maxSum = uniqueArr.slice(0, 3).reduce((sum, num) => sum + num, 0);
-    return maxSum;
-}
+// function maxTriSum(numbers) {
+//     const uniqueArr = Array.from(new Set(numbers));
+//     if (uniqueArr.length < 3) {
+//         return "Массив должен содержать хотя бы 3 уникальных числа";
+//     }
+//     uniqueArr.sort((a, b) => b - a);
+//     const maxSum = uniqueArr.slice(0, 3).reduce((sum, num) => sum + num, 0);
+//     return maxSum;
+// }
+
+
+
+// CW part2 9 task
+
+// function nicknameGenerator(name) {
+//     if (name.length < 4) {
+//         return "Error: Name too short";
+//     }
+
+//     const thirdLetter = name[2].toLowerCase(); 
+
+//     if ("aeiou".includes(thirdLetter)) {
+//         return name.slice(0, 4);
+//     } else {
+//         return name.slice(0, 3);
+//     }
+// }
