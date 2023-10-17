@@ -100,7 +100,7 @@
 
 
 
-// CW part2 9 task
+// CW part2 11 task
 
 // function nicknameGenerator(name) {
 //     if (name.length < 4) {
@@ -115,3 +115,21 @@
 //         return name.slice(0, 3);
 //     }
 // }
+
+
+// CW part2 12 task
+function sortMyString(s) {
+    let evenGroup = '';
+    let oddGroup = '';
+  
+    for (let i = 0; i < s.length; i++) {
+      if (i % 2 === 0) {
+        evenGroup += s[i];
+      } else {
+        oddGroup += s[i];
+      }
+    }
+  
+    return evenGroup + ' ' + oddGroup;
+  }
+  
