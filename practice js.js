@@ -118,18 +118,30 @@
 
 
 // CW part2 12 task
-function sortMyString(s) {
-    let evenGroup = '';
-    let oddGroup = '';
+
+// function sortMyString(s) {
+//     let evenGroup = '';
+//     let oddGroup = '';
+
+//     for (let i = 0; i < s.length; i++) {
+//       if (i % 2 === 0) {
+//         evenGroup += s[i];
+//       } else {
+//         oddGroup += s[i];
+//       }
+//     }
+
+//     return evenGroup + ' ' + oddGroup;
+//   }
+
+
+// CW part2 12 task
+
+// function isPowerOfTwo(n){
+    
+//     if (n <= 0 || n !== Math.floor(n)) {
+//       return false;
+//     }
   
-    for (let i = 0; i < s.length; i++) {
-      if (i % 2 === 0) {
-        evenGroup += s[i];
-      } else {
-        oddGroup += s[i];
-      }
-    }
-  
-    return evenGroup + ' ' + oddGroup;
-  }
-  
+//     return (n & (n - 1)) === 0;
+//   }
