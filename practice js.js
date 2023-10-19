@@ -138,10 +138,25 @@
 // CW part2 12 task
 
 // function isPowerOfTwo(n){
-    
+
 //     if (n <= 0 || n !== Math.floor(n)) {
 //       return false;
 //     }
-  
+
 //     return (n & (n - 1)) === 0;
 //   }
+
+
+// CW part2 19 task
+
+// function dataReverse(data) {
+//     const segmentSize = 8; 
+//     const reversedData = [];
+
+//     for (let i = data.length - segmentSize; i >= 0; i -= segmentSize) {
+//         const segment = data.slice(i, i + segmentSize);
+//         reversedData.push(...segment);
+//     }
+
+//     return reversedData;
+// }
