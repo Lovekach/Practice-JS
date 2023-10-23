@@ -135,7 +135,7 @@
 //   }
 
 
-// CW part2 12 task
+// CW part2 13 task
 
 // function isPowerOfTwo(n){
 
@@ -146,6 +146,112 @@
 //     return (n & (n - 1)) === 0;
 //   }
 
+
+
+// CW part2 13 task
+
+// function sentence(List) {
+//     const sortedValues = [];
+  
+    
+//     let minKey = 999;
+//     let maxKey = -999;
+//     for (const dict of List) {
+//       for (const key in dict) {
+//         const intKey = parseInt(key);
+//         if (!isNaN(intKey)) {
+//           minKey = Math.min(minKey, intKey);
+//           maxKey = Math.max(maxKey, intKey);
+//         }
+//       }
+//     }
+  
+   
+//     for (let i = minKey; i <= maxKey; i++) {
+//       const key = i.toString();
+//       for (const dict of List) {
+//         if (dict[key]) {
+//           sortedValues.push(dict[key]);
+//           break;
+//         }
+//       }
+//     }
+  
+    
+//     const result = sortedValues.join(' ');
+  
+//     return result;
+//   }
+
+
+
+
+// CW part2 15 task
+
+// function minSum(arr) {
+
+//     arr.sort((a, b) => a - b);
+    
+//     let result = 0;
+//     const n = arr.length;
+    
+    
+//     for (let i = 0; i < n / 2; i++) {
+//       result += arr[i] * arr[n - i - 1];
+//     }
+    
+//     return result;
+//   }
+
+
+// CW part2 16 task
+
+// function spread(func, args) {
+//     return func(...args);
+//   }
+  
+//   // Example usage:
+//   function someFunction(a, b, c, d) {
+//     return `${a} | ${b} | ${c} | ${d}`;
+//   }
+
+// CW part2 17 task
+
+// function vowelOne(inputString) {
+//     const vowels = "aeiouAEIOU"; // List of vowel characters
+//     let result = "";
+  
+//     for (let i = 0; i < inputString.length; i++) {
+//       const currentChar = inputString[i];
+  
+//       if (vowels.includes(currentChar)) {
+//         result += "1"; 
+//       } else {
+//         result += "0"; 
+//       }
+//     }
+  
+//     return result;
+//   }
+
+// CW part2 18 task
+
+// function killer(suspectInfo, dead) {
+//     const possible_killers = [];
+
+//     for (const suspect in suspectInfo) {
+//         const seen_people = suspectInfo[suspect];
+//         if (dead.every(person => seen_people.includes(person))) {
+//             possible_killers.push(suspect);
+//         }
+//     }
+
+//     if (possible_killers.length === 1) {
+//         return possible_killers[0];
+//     } else {
+//         return "No single killer found.";
+//     }
+// }
 
 // CW part2 19 task
 
